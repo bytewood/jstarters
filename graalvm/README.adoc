@@ -1,0 +1,14 @@
+
+== Prerequisites
+[bash]
+---
+sudo apt install build-essential zlib1g-dev
+sdk use java 22.3.r19-grl
+
+javac Main.java
+native-image Main
+---
+
+== Setup Graalvm
+$GRAALVM_HOME/bin/gu install native-image
+
